@@ -81,13 +81,13 @@
 
 <!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) TODO -->
 
-This is a CMS project for private people to 
+This is a CMS project to create a website for private people to create profile pages for themself and public it in this website. Alongside with that this application is also for people who want to search in the profile pages and want to have an easier experience in finding his/her ideal professional. Users can create accounts for themself and through that they will be able to save their favourite pages to make the future revisits easier.
 
 <a href="#readme-top">:top:</a>
 
 
 
-### Built With
+## Built With
 
 * [![React][React.js]][React-url]
 * [![TypeScript][typescript]][Typescipt-url]
@@ -106,13 +106,13 @@ This is a CMS project for private people to
 
 <a href="#readme-top">:top:</a>
 
-### Prerequisites
+## Prerequisites
 
 <!-- TODO -->
 
 <a href="#readme-top">:top:</a>
 
-### Installation
+## Installation
 
 <!-- TODO -->
 
