@@ -1,4 +1,9 @@
 package CsegeProjects.HomePage.repositoryDAO;
 
-public interface ViewerRepository {
+import CsegeProjects.HomePage.model.client.Viewer;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.UUID;
+
+public interface ViewerRepository extends JpaRepository<Viewer, UUID> {
 }
