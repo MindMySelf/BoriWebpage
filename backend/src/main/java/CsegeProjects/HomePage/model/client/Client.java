@@ -15,6 +15,7 @@ import java.util.UUID;
 @AllArgsConstructor
 public class Client {
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID id;
     @Column(nullable = false, unique = true)
     private String name;

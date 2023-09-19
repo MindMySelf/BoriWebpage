@@ -14,6 +14,7 @@ import java.util.UUID;
 @AllArgsConstructor
 public class Template {
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID id;
     @Column(nullable = false)
     private String title;

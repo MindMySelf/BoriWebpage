@@ -17,6 +17,7 @@ import java.util.UUID;
 @AllArgsConstructor
 public class Page {
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID id;
     @Column
     private String title;
