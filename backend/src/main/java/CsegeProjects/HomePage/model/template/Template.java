@@ -16,4 +16,19 @@ public class Template {
     @Column(nullable = false)
     private String html;
 
+    public UUID getId() {
+        return id;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public String getCss() {
+        return css;
+    }
+
+    public String getHtml() {
+        return html;
+    }
 }
