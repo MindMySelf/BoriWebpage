@@ -2,11 +2,17 @@ package CsegeProjects.HomePage.model.client;
 
 import CsegeProjects.HomePage.model.page.Page;
 import jakarta.persistence.*;
+import lombok.*;
 
 import java.util.List;
 import java.util.UUID;
 
 @Entity
+@Getter
+@Setter
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class Client {
     @Id
     private UUID id;

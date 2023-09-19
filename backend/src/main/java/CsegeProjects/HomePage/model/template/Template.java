@@ -1,11 +1,17 @@
 package CsegeProjects.HomePage.model.template;
 
 import jakarta.persistence.*;
+import lombok.*;
 
 import java.util.UUID;
 
 @Entity
 @Table(name = "templates")
+@Getter
+@Setter
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class Template {
     @Id
     private UUID id;
@@ -16,19 +22,4 @@ public class Template {
     @Column(nullable = false)
     private String html;
 
-    public UUID getId() {
-        return id;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public String getCss() {
-        return css;
-    }
-
-    public String getHtml() {
-        return html;
-    }
 }
