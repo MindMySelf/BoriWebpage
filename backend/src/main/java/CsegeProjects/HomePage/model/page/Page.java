@@ -1,8 +1,10 @@
 package CsegeProjects.HomePage.model.page;
 
-import CsegeProjects.HomePage.model.client.Owner;
+import CsegeProjects.HomePage.model.client.Client;
+import CsegeProjects.HomePage.model.template.Template;
 import jakarta.persistence.*;
 
+import java.util.List;
 import java.util.UUID;
 
 @Entity
@@ -13,5 +15,12 @@ public class Page {
     @Column
     private String title;
     @Column
-    private Owner owner;
+    @OneToOne
+    private Client owner;
+    @Column
+    @OneToMany
+    private List<PageElement> elements;
+    @Column
+    @OneToOne
+    private Template template;
 }
