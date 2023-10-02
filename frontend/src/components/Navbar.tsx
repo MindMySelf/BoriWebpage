@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 export function Navbar() {
   return (
-    <NavbarAs className="bg-white shadow-lg mb-3">
+    <NavbarAs className="bg-white shadow-lg mb-3" sticky="top">
       <Container>
         <Nav className="me-auto">
           <Nav.Link to={"/"} as={NavLink}>
@@ -22,6 +22,7 @@ export function Navbar() {
             className="btn btn-secondary dropdown-toggle"
             data-bs-toggle="dropdown"
             aria-expanded="false"
+            variant="info"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
