@@ -21,13 +21,13 @@ public class Page {
     private UUID id;
     @Column
     private String title;
-    @Column
+
     @OneToOne
     private Client owner;
-    @Column
+
     @OneToMany
     private List<PageElement> elements;
-    @Column
+
     @OneToOne
     private Template template;
 

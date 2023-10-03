@@ -24,7 +24,7 @@ public class Client {
     private String password;
     @Enumerated(EnumType.STRING)
     private Role role;
-    @Column
+
     @OneToMany
     private List<Page> pages;
 }

@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.UUID;
 
 @RestController
-@RequestMapping("/pages")
+@RequestMapping("/api/v1/pages")
 public class PageController {
     private final PageService pageService;
 
