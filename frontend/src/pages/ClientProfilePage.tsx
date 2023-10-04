@@ -1,18 +1,20 @@
 import { useParams } from "react-router-dom"
 import { useState, useEffect } from "react";
 import { Spinner } from "react-bootstrap";
+import { Client } from "../data/Client";
+import { ClientProfile } from "../components/ClientProfile";
 
 async function fetchClientData(id:string) {
-    return await fetch(`/api/v1/clients/${id}`).then((res) => res.json());
+    return await fetch(`/api/v1/clients/${id}`).then((res) => res.json() as Promise<Client>);
 }
 
-export function ClientProfile() {
+export function ClientProfilePage() {
     const { id } = useParams();
-    const [client, setClient] = useState(null);
+    const [client, setClient] = useState<Client | null>(null);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetchClientData(id)
+        fetchClientData(id!)
         .then((client) => {
             setClient(client);
             setLoading(false);
@@ -24,11 +26,11 @@ export function ClientProfile() {
 
     if(loading) {
         return (
-            <Spinner animation="border" role="status">
+            <Spinner animation="border" role="status" className="d-flex justify-content-center">
               <span className="visually-hidden">Loading...</span>
             </Spinner>
           );
     }
 
-    return <h1>Here is the User Profile!</h1>
+    return <ClientProfile name=""></ClientProfile>
 }

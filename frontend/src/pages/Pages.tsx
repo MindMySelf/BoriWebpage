@@ -1,3 +1,3 @@
 export function Pages() {
-    return <h1>There should be pages</h1>
+    return <div dangerouslySetInnerHTML={{ __html: "<h1>No templates yet</h1>" }}/>
 }

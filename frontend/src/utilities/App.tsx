@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import { Home } from "../pages/Home";
-import { ClientProfile } from "../pages/ClientProfile";
+import { ClientProfilePage } from "../pages/ClientProfilePage";
 import { Pages } from "../pages/Pages";
 import { Navbar } from "../components/Navbar";
 import { Templates } from "../pages/Templates";
@@ -12,7 +12,7 @@ function App() {
       <Navbar />      
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/client" element={<ClientProfile />} />
+          <Route path="/client" element={<ClientProfilePage />} />
           <Route path="/pages" element={<Pages />} />
           <Route path="/templates" element={<Templates />} />
         </Routes>
